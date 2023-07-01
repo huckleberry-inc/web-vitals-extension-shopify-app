@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "WebVitals for Shopify App",
+  "version": "1.0",
+  "description": "'Built for Shopify' needs to measure and improve the web vitals values of Shopify App. This chrome extension visualizes the values sent from App Bridge via postMessage to the parent iframe.",
+  "content_scripts": [
+    {
+      "matches": ["https://admin.shopify.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
